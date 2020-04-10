@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="blog_bootstrap.css.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-9 pl-4">
+                <div class="first-row  mt-5 mb-5">
+                    <div class="row">
+                        <div class="card mr-3" style="width: 18rem;">
+                            <img class="card-image-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8astdHIaK3n26E_t4cFhDZu0_EpWpqr1X18SIj9sQv6wV0rOH" alt="High Temperature" />
+                            <div class="card-body">
+                                <h5 class="card-title">SYMPTOMS</h5>
+                                <p class="card-text">This means you feel hot to touch on your chest or back (you do not need to measure your temperature
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mr-3" style="width: 18rem;">
+                            <img class="card-image-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8astdHIaK3n26E_t4cFhDZu0_EpWpqr1X18SIj9sQv6wV0rOH" alt="Cough" />
+                            <div class="card-body">
+                                <h5 class="card-title">New, Continuous Cough</h5>
+                                <p class="card-text">
+                                    This means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual)
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mr-3" style="width: 18rem;">
+                            <img class="card-image-top" src="data:image/jpeg;base64,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">
+                            <div class="card-body">
+                                <h5 class="card-title">Shortness of Breath</h5>
+                                <p class="card-text"> This is a group of subjective sensations that suggest our respiratory system is not functioning well
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-row mt-5 mb-5">
+                    <div class="row">
+                        <div class="card mr-3" style="width: 18rem;">
+                            <img src="https://www.salisburyjournal.co.uk/resources/images/11183914.jpg?display=1&htype=0&type=responsive-gallery" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Stay at Home</h5>
+                                <p class="card-text">
+                                    Everyone must stay at home to help stop the spread of coronavirus. <br /> You should only leave the house for 1 of 4 reasons:
+                                    <ul>
+                                        <li>shopping for basic necessities, for example food and medicine, which must be as infrequent as possible</li>
+                                        <li>one form of exercise a day, for example a run, walk, or cycle – alone or with members of your household </li>
+                                        <li>any medical need, or to provide care or to help a vulnerable person</li>
+                                        <li>travelling to and from work, but only where this absolutely cannot be done from home</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mr-3" style="width: 18rem;">
+                            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/02/12/21/istock-467706864.jpg?w968h681" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wash Your Hands</h5>
+                                <p class="card-text">Keep healthy yourself
+                                    <ul>
+                                        <li>
+                                            wash your hands with soap and water often – do this for at least 20 seconds
+                                        </li>
+                                        <li>use hand sanitiser gel if soap and water are not available</li>
+                                        <li>wash your hands as soon as you get back home </li>
+                                        <li>do not touch your eyes, nose or mouth if your hands are not clean</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mr-3" style="width: 18rem;">
+                            <img src="https://www.hollywoodpresbyterian.com/wp-content/uploads/2017/05/Infection-Control-iStock-502869980-web.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cough on a Tissue</h5>
+                                <p class="card-text">Keep healthy yourself
+                                    <ul>
+                                        <li>
+                                            wash your hands with soap and water often – do this for at least 20 seconds
+                                        </li>
+                                        <li>use hand sanitiser gel if soap and water are not available</li>
+                                        <li>wash your hands as soon as you get back home </li>
+                                        <li>do not touch your eyes, nose or mouth if your hands are not clean</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="bg-dark text-light text-center mt-4" id="side_heading">
+                    <h2>Number of Coronavirus</h2>
+                </div>
+                <div class="statistics">
+                    <div class="world bg-light mt-5">
+                        <h3 class="bg-secondary text-center">World</h3>
+                        <h4 class="text-center">Total Confirmed</h4>
+                        <p class="text-center">435,006</p>
+                        <h4 class="text-center">Total Deaths</h4>
+                        <p class="text-center">19,625</p>
+                        <h4 class="text-center">Total Recovered</h4>
+                        <p class="text-center">111,822</p>
+                    </div>
+                    <div class="UK bg-light mt-5">
+                        <h3 class="bg-secondary text-center">United Kingdom</h3>
+                        <h4 class="text-center">Total Confirmed</h4>
+                        <p class="text-center">8,167</p>
+                        <h4 class="text-center">Total Deaths</h4>
+                        <p class="text-center">423</p>
+                        <h4 class="text-center">Total Recovered</h4>
+                        <p class="text-center">140</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>All Rights Reserved <span>©2020</span></footer>
+</body>
+
+</html>
